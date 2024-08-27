@@ -28,4 +28,4 @@ jobs:
           pip install -U https://github.com/Jason2866/platformio-core/archive/refs/tags/v6.1.16+free.zip
       - name: Build example
         run: |
-          pio run -d ${{ matrix }}
+          pio run
