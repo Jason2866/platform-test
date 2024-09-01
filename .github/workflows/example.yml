@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         os: [ubuntu-22.04, windows-2022, macos-14]
 
@@ -26,7 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install wheel
           pip install -U https://github.com/Jason2866/platformio-core/archive/refs/tags/v6.1.16+free.zip
-          #pio pkg install --global --platform https://github.com/Jason2866/platform-espressif32.git#install_platform
       - name: Build example
         run: |
           pio run
