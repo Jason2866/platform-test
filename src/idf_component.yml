@@ -1,4 +1,7 @@
 dependencies:
+  # Required IDF version
   idf: ">=4.4"
+
   esp-nimble-cpp:
     git: https://github.com/h2zero/esp-nimble-cpp.git
+    version: 877a29a8b1d0022c5e8f67ba8b879316e67b6c3d
